@@ -1,31 +1,11 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 15.05.2018 16:15:26
-// Design Name: 
-// Module Name: Multiply
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module SIMDmultiply(
         input [15:0] mulinputa,
         input [15:0] mulinputb,
-        input H,
-        input O,
-        input Q,
+        input H,//1-bit signal for 16-bits data
+        input O,//1-bit signal for 8-bits data
+        input Q,//1-bit signal for 4-bits data
+		//output
         output [15:0] muloutput
     );
     
